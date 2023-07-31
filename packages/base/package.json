@@ -1,0 +1,59 @@
+{
+  "name": "@cabron-ui/base",
+  "version": "0.0.0",
+  "description": "Cabron UI headless components.",
+  "keywords": [
+    "ui",
+    "library",
+    "design-system",
+    "components"
+  ],
+  "homepage": "https://github.com/cabron-ui/cabron-ui",
+  "bugs": {
+    "url": "https://github.com/cabron-ui/cabron-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cabron-ui/cabron-ui.git"
+  },
+  "license": "MIT",
+  "author": "Cabron UI team",
+  "sideEffects": false,
+  "main": "dist/cjs/index.cjs",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.cjs",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@cabron-ui/eslint-config-cabron-ui": "workspace:*",
+    "@cabron-ui/tsconfig": "workspace:*",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.48.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@kuma-ui/core": "^1.3.0"
+  }
+}

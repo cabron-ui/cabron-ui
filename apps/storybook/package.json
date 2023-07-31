@@ -1,0 +1,27 @@
+{
+  "name": "@cabron-ui/playground",
+  "private": true,
+  "description": "Cabron UI Storybook playground.",
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build -o dist",
+    "serve": "serve -s dist -p 6006"
+  },
+  "devDependencies": {
+    "@linaria/rollup": "^4.5.4",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-interactions": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.0",
+    "@storybook/react": "^7.4.0",
+    "@storybook/react-vite": "^7.4.0",
+    "@storybook/testing-library": "^0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "serve": "^14.2.1",
+    "storybook": "^7.4.0",
+    "vite": "^4.4.9",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}

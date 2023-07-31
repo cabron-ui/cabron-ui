@@ -1,0 +1,49 @@
+{
+  "name": "cabron-ui",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cabron-ui/cabron-ui.git"
+  },
+  "license": "MIT",
+  "author": "Cabron UI Team",
+  "scripts": {
+    "dev": "pnpm -F ./apps/storybook run dev",
+    "doc": "pnpm -F ./apps/docs run dev",
+    "build": "lerna run build",
+    "build:storybook": "pnpm -F ./apps/storybook run build",
+    "build:doc": "pnpm -F ./apps/docs run build",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "lint": "eslint . --ext .ts,.tsx --cache",
+    "lint:fix": "npm run lint -- --fix",
+    "typecheck": "lerna run typecheck",
+    "publish:test": "lerna publish --conventional-graduate --yes --no-git-tag-version --no-push",
+    "publish:release": "lerna publish --conventional-graduate --yes",
+    "publish:next": "lerna publish --conventional-prerelease --yes --preid next --dist-tag next",
+    "prepare": "husky install .config/husky"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@cabron-ui/eslint-config-cabron-ui": "workspace:*",
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@linaria/vite": "^4.5.4",
+    "eslint": "^8.46.0",
+    "husky": "^8.0.3",
+    "lerna": "^7.1.4",
+    "node-gyp-build": "^4.6.0",
+    "prettier": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite-plugin-dts": "^3.4.0",
+    "vite-tsconfig-paths": "^4.2.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "packageManager": "pnpm@8.6.10"
+}
