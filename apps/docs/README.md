@@ -1,6 +1,6 @@
-# @cabron-ui/docs
+# @hitachivantara/docs
 
-Cabron UI documentation website.
+NEXT UI documentation website.
 
 ## Local Development
 
@@ -10,4 +10,4 @@ Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
 ## License
 
-MIT
+Apache-2.0

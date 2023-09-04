@@ -1,6 +1,6 @@
-# @cabron-ui/playground
+# @hitachivantara/playground
 
-Cabron UI Storybook playground.
+NEXT UI Storybook playground.
 
 ## Local Development
 
@@ -10,4 +10,4 @@ Then, run `pnpm dev` to start the development server and visit localhost:6006.
 
 ## License
 
-MIT
+Apache-2.0

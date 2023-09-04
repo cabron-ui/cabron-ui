@@ -1,7 +1,7 @@
 {
-  "name": "@cabron-ui/eslint-config-cabron-ui",
+  "name": "@hitachivantara/eslint-config",
   "version": "0.0.0",
-  "description": "Cabron UI ESLint configuration.",
+  "description": "NEXT UI ESLint configuration.",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {

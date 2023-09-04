@@ -1,5 +1,5 @@
 {
-  "name": "@cabron-ui/tsconfig",
+  "name": "@hitachivantara/tsconfig",
   "private": true,
   "license": "MIT",
   "publishConfig": {

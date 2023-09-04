@@ -1,13 +1,13 @@
-# @cabron-ui/eslint-config
+# @itachivantara/eslint-config
 
-Cabron UI ESLint configuration.
+NEXT UI ESLint configuration.
 
 ## Installation
 
 ```bash
-pnpm install @cabron-ui/eslint-config
+pnpm install @hitachivantara/eslint-config
 ```
 
 ## License
 
-MIT
+Apache-2.0

@@ -1,23 +1,24 @@
 {
-  "name": "@cabron-ui/base",
+  "name": "@hitachivantara/uikit-react-base",
   "version": "0.0.0",
-  "description": "Cabron UI headless components.",
+  "private": false,
+  "description": "NEXT UI headless components.",
+  "author": "Hitachi Vantara UI Kit Team",
+  "homepage": "https://github.com/lumada-design/hv-uikit-react",
   "keywords": [
-    "ui",
-    "library",
+    "hitachi-vantara",
     "design-system",
-    "components"
+    "ui-kit",
+    "react"
   ],
-  "homepage": "https://github.com/cabron-ui/cabron-ui",
-  "bugs": {
-    "url": "https://github.com/cabron-ui/cabron-ui/issues"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cabron-ui/cabron-ui.git"
+    "url": "https://github.com/lumada-design/hv-uikit-react.git"
   },
-  "license": "MIT",
-  "author": "Cabron UI team",
+  "bugs": {
+    "url": "https://github.com/lumada-design/hv-uikit-react/issues"
+  },
+  "license": "Apache-2.0",
   "sideEffects": false,
   "main": "dist/cjs/index.cjs",
   "module": "dist/esm/index.js",
@@ -42,8 +43,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@cabron-ui/eslint-config-cabron-ui": "workspace:*",
-    "@cabron-ui/tsconfig": "workspace:*",
+    "@hitachivantara/eslint-config": "workspace:*",
+    "@hitachivantara/tsconfig": "workspace:*",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "eslint": "^8.48.0",

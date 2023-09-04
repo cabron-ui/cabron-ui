@@ -1,7 +1,7 @@
 {
-  "name": "@cabron-ui/playground",
+  "name": "@hitachivantara/playground",
   "private": true,
-  "description": "Cabron UI Storybook playground.",
+  "description": "NEXT UI Storybook playground.",
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build -o dist",

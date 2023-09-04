@@ -1,3 +1,3 @@
-import { themes, parseTheme } from "@cabron-ui/styles";
+import { themes, parseTheme } from "@hitachivantara/styles";
 
 export const theme = parseTheme(themes);

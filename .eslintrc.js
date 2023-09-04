@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
-  // This tells ESLint to load the config from the package `eslint-config-cabron-ui`
-  extends: ["@cabron-ui/eslint-config-cabron-ui"],
+  // This tells ESLint to load the config from the package `eslint-config`
+  extends: ["@hitachivantara/eslint-config"],
   settings: {
     next: {
       rootDir: ["apps/*/"],

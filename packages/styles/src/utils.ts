@@ -18,15 +18,15 @@ export const parseTheme = (
   };
 };
 
-export const mapCSSVars = <T extends object>(
+export const mapToCSSVars = <T extends object>(
   obj: T,
-  prefix: string = "--cabron",
+  prefix: string = "--uikit",
 ): DeepString<T> => {
   const vars = {} as DeepString<T>;
 
   for (const [key, value] of Object.entries(obj)) {
     if (typeof value === "object" && value !== null) {
-      vars[key] = mapCSSVars(value, `${prefix}-${key}`);
+      vars[key] = mapToCSSVars(value, `${prefix}-${key}`);
     } else {
       vars[key] = `var(${prefix}-${key})`;
     }

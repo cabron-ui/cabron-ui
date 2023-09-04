@@ -1,5 +1,5 @@
 import { css } from "@linaria/core";
-import { theme } from "@cabron-ui/styles";
+import { theme } from "@hitachivantara/styles";
 
 export const styles = {
   base: css`

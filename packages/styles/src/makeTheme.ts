@@ -2,18 +2,19 @@ import * as tokens from "./tokens";
 import { theme } from "./theme";
 import { Theme, ThemeSpec, ThemeCustom } from "./types/theme";
 
-const mergeTheme = (...objects) => {
-  const isObject = (obj) => obj && typeof obj === "object";
+const mergeTheme = (...tokens) => {
+  console.log('tokens: ', tokens);
+  const isObject = (obj: Theme) => obj && typeof obj === "object";
 
-  return objects.reduce((prev, obj) => {
-    Object.keys(obj).forEach((key) => {
+  return tokens.reduce((prev, token) => {
+    Object.keys(token).forEach((key) => {
       const pVal = prev[key];
-      const oVal = obj[key];
+      const val = token[key];
 
-      if (isObject(pVal) && isObject(oVal)) {
-        prev[key] = pVal ? oVal : mergeTheme(pVal, oVal);
+      if (isObject(pVal) && isObject(val)) {
+        prev[key] = pVal ? val : mergeTheme(pVal, val);
       } else {
-        prev[key] = oVal;
+        prev[key] = val;
       }
     });
 
@@ -22,7 +23,7 @@ const mergeTheme = (...objects) => {
 };
 
 /**
- * Generate a theme base on the options received.
+ * Generate a theme based on the options received.
  * Takes an incomplete theme object and adds the missing parts.
  *
  * @param options The options to generate the theme
@@ -34,7 +35,5 @@ export const makeTheme = (
   const opt: ThemeCustom =
     typeof options === "function" ? options(theme) : options;
 
-  const newTheme = mergeTheme(tokens, opt);
-
-  return newTheme;
+  return mergeTheme(tokens, opt);
 };

@@ -1,13 +1,13 @@
-# @cabron-ui/base
+# @hitachivantara/uikit-react-base
 
-Cabron UI headless components.
+NEXT UI headless components.
 
 ## Installation
 
 ```bash
-pnpm install @cabron-ui/base
+pnpm install @hitachivantara/uikit-react-base
 ```
 
 ## License
 
-MIT
+Apache-2.0

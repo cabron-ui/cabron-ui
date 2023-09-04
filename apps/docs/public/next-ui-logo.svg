@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155 35">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Futura-Medium, Futura;
+        font-weight: 500;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #111d2b;
+        font-size: 35.38px;
+      }
+
+      .cls-2 {
+        font-family: Futura-Bold, Futura;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-2" transform="translate(0 31.37) scale(1.06 1)"><tspan x="0" y="0">NEXT</tspan></text>
+    <text class="cls-1" transform="translate(115.74 31.16) scale(1.06 1)"><tspan x="0" y="0">UI</tspan></text>
+  </g>
+</svg>

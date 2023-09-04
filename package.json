@@ -1,12 +1,12 @@
 {
-  "name": "cabron-ui",
+  "name": "next-ui",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cabron-ui/cabron-ui.git"
+    "url": "https://github.com/lumada-design/hv-uikit-react.git"
   },
-  "license": "MIT",
-  "author": "Cabron UI Team",
+  "license": "Apache-2.0",
+  "author": "Hitachi Vantara UI Kit Team",
   "scripts": {
     "dev": "pnpm -F ./apps/storybook run dev",
     "doc": "pnpm -F ./apps/docs run dev",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
-    "@cabron-ui/eslint-config-cabron-ui": "workspace:*",
+    "@hitachivantara/eslint-config": "workspace:*",
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
     "@linaria/vite": "^4.5.4",
@@ -39,6 +39,15 @@
     "react-dom": "^18.2.0",
     "vite-plugin-dts": "^3.4.0",
     "vite-tsconfig-paths": "^4.2.0"
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "eslint",
+      "prettier --write"
+    ]
   },
   "commitlint": {
     "extends": [

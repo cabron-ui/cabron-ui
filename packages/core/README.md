@@ -1,13 +1,13 @@
-# @cabron-ui/core
+#@hitachivantara/uikit-react-core
 
-Cabron UI core components library.
+NEXT UI core components library.
 
 ## Installation
 
 ```bash
-pnpm install @cabron-ui/core
+pnpm install@hitachivantara/uikit-react-core
 ```
 
 ## License
 
-MIT
+Apache-2.0

@@ -1,7 +1,7 @@
 {
-  "name": "@cabron-ui/docs",
+  "name": "@hitachivantara/docs",
   "private": true,
-  "description": "Cabron UI documentation website.",
+  "description": "NEXT UI documentation website.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

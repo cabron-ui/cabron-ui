@@ -12,7 +12,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    intent: "secondary",
+    intent: "primary",
   },
   render: (props) => <Button {...props}>Primary</Button>,
 };

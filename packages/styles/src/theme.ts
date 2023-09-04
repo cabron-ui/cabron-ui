@@ -6,7 +6,7 @@ import {
   ThemeTypographyProps,
 } from "./types";
 import * as tokens from "./tokens";
-import { mapCSSVars } from "./utils";
+import { mapToCSSVars } from "./utils";
 
 const typographyProps: DeepString<ThemeTypographyProps> = {
   color: "string",
@@ -32,7 +32,7 @@ const typographySpec: DeepString<ThemeTypography> = {
   },
 };
 
-const themeVars: ThemeVars = mapCSSVars({
+const themeVars: ThemeVars = mapToCSSVars({
   ...tokens,
   colors: {
     scheme: "light",

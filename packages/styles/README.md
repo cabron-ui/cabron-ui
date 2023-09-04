@@ -1,13 +1,13 @@
-# @cabron-ui/styles
+# @hitachivantara/uikit-styles
 
-Cabron UI styling solution.
+NEXT UI styling solution.
 
 ## Installation
 
 ```bash
-pnpm install @cabron-ui/styles
+pnpm install @hitachivantara/uikit-styles
 ```
 
 ## License
 
-MIT
+Apache-2.0
